@@ -1,0 +1,18 @@
+spring:
+  application:
+    name: agenda-contatos
+
+  datasource:
+    url: jdbc:postgresql://localhost:5432/tabela_banco
+    username: seu_usuario
+    password: sua_senha
+    driver-class-name: org.postgresql.Driver
+
+  jpa:
+    hibernate:
+      ddl-auto: update
+      format-sql: true
+    show-sql: true
+    properties:
+      hibernate:
+        dialect: org.hibernate.dialect.PostgreSQLDialect
